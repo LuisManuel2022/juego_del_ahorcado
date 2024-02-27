@@ -1,8 +1,7 @@
 import { useContext, useEffect, useState } from 'react'
-import { PALABROS } from '../assets/palabros'
+import { PALABROS } from '../../public/assets/palabros'
 import { useNavigate } from 'react-router-dom'
 import Contexto from '../contexto/Contexto'
-import imagen1 from '../assets/el_ahorcado1.png'
 
 const Juego = () => {    
     const navegacion = useNavigate()
@@ -84,7 +83,7 @@ const Juego = () => {
                 }
             </div>
             <div className="imagen">
-               <img src={imagen1} alt="inicia" />
+               <img src={`../assets/el_ahorcado${imagen}.png`} alt="inicia" />
             </div>
 
         </>
